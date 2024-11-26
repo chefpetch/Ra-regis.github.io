@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Exo', sans-serif;
+}
+
+.submit{
+	position: absolute;
+	top: 604px;
+	left: 1376;
+	width: 130px;
+	height: 55PX;
+	background-color: #F5B971;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 13px;
+	font-family: 'kanit', 'san-seri';
+	border: none;
+}
+.btn-custom {
+    font-size: 1.5rem; /* Increase font size */
+	padding: 1rem 2rem; /* Increase padding */
+	margin-right: 30px; /* Add margin to the right */
+}
+.container-custom {
+	position: relative;
+	top: -20rem; /* Adjust this value to move the buttons up */
+	padding-left: 20rem; /* Adjust as needed to move buttons to the left */
+	display: inline-block; /* Ensure the container itself doesn't stretch */
+	width: auto; /* Adjust width as needed */
+		
+}
+.d-flex .btn-section {
+	margin-right: 20px; /* Space between buttons within a section */
+	margin-bottom: 20px; /* Space between sections */
+}
+.category-btn {
+	font-size: 1.75rem; /* Increase font size */
+	padding: 1.25rem 2.5rem; /* Increase padding */
+	margin-right: 20px; /* Space between buttons */
+}
+.special-btn {
+	font-size: 2rem; /* Larger font size for the special button */
+	padding: 1.5rem 3rem; /* Larger padding for the special button */
+}
+.subject-container {
+    margin-top: 30px; /* Space between sections */
+}
+.subject-btn {
+    display: inline-block; /* Prevent buttons from stretching */
+    margin-right: 10px; /* Space between buttons */
+    font-size: 1.5rem; /* Adjust font size */
+    padding: 1rem 2rem; /* Adjust padding */
+}
+
+.btn-warning input:checked + label {
+    background-color: #ec971f;
+    color: #fff;
+}
+.top-left {
+	position: absolute;
+	top: 10px;
+	left: 90%;
+	background-color: white;
+	padding: 10px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+}
+.img {
+	display: inline-block;
+	vertical-align: top;
+}
+.name {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	border-radius: 15px;
+}
+

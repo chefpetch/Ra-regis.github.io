@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Images */
+.img2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 12vw;
+    height: auto;
+}
+
+.img1 {
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    max-width: 8vw;
+    height: auto;
+}
+
+.img3 {
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    max-width: 18vw;
+    height: auto;
+    transform: translate(-50%, 0); /* Horizontally center on the bottom edge */
+}
+
+.img4 {
+    position: absolute;
+    left: -10%;
+    top: 0;
+    max-width: 40vw;
+    height: 50vw;
+    
+}
+
+.img5 {
+    position: absolute;
+    left: 15%;
+    top: 45%;
+    max-width: 22vw;
+    height: auto;
+    transform: translateY(-50%);
+}
+
+/* Heading */
+h1 {
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    line-height: 1.2;
+    color: #333;
+    max-width: 80%;
+}
+
+/* Sign-in section */
+.signin {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5vw;
+}
+
+/* Media Queries for Responsive Scaling */
+@media screen and (max-width: 1024px) {
+    .img2 {
+        max-width: 14vw;
+    }
+
+    .img1 {
+        max-width: 10vw;
+    }
+
+    .img3 {
+        max-width: 20vw;
+    }
+
+    .img4 {
+        max-width: 28vw;        
+        border-radius: 50% 50% 0 0;
+        overflow: hidden;
+    }
+
+    .img5 {
+        max-width: 24vw;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    .signin {
+        font-size: 1.3vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img2 {
+        max-width: 16vw;
+    }
+
+    .img1 {
+        max-width: 12vw;
+    }
+
+    .img3 {
+        max-width: 22vw;
+    }
+
+    .img4 {
+        max-width: 30vw;
+        border-radius: 50% 50% 0 0;
+        overflow: hidden;
+    }
+
+    .img5 {
+        max-width: 26vw;
+    }
+
+    h1 {
+        font-size: 3vw;
+    }
+
+    .signin {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img2 {
+        max-width: 20vw;
+        top: 0;
+        right: 0;
+    }
+
+    .img1 {
+        max-width: 16vw;
+        top: 3%;
+        right: 1%;
+    }
+
+    .img3 {
+        max-width: 28vw;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .img4 {
+        max-width: 35vw;
+        border-radius: 50% 50% 0 0;
+        overflow: hidden;
+    }
+
+    .img5 {
+        max-width: 32vw;
+        left: 10%;
+    }
+
+    h1 {
+        font-size: 5vw;
+        top: 15%;
+    }
+
+    .signin {
+        font-size: 2.5vw;
+        bottom: 10%;
+    }
+}

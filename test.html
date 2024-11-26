@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical and Horizontal Button Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Custom styles for the radio buttons */
+        .btn-custom {
+            border: 2px solid #007bff;
+            background-color: white;
+            color: #007bff;
+            padding: 12px 16px; /* Increased padding for height */
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%; /* Full width within the container */
+            min-width: 120px; /* Minimum width for consistency */
+            height: 60px; /* Fixed height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .btn-custom:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-check:checked + .btn-custom {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-custom i {
+            margin-right: 8px;
+        }
+
+        /* Container with cyan background */
+        .cyan-container {
+            background-color: #00bcd4; /* Cyan color */
+            padding: 20px; /* Padding around buttons */
+            border-radius: 8px; /* Rounded corners */
+            margin-left: 150px; /* Margin to accommodate the sidebar */
+        }
+
+        .menu-text {
+            color: white; /* Text color */
+            font-size: 1.5rem; /* Font size */
+            font-weight: bold; /* Font weight */
+            margin-bottom: 20px; /* Space below the text */
+            text-align: center; /* Center align text */
+        }
+
+        /* Layout adjustments */
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            gap: 10px; /* Space between buttons */
+        }
+
+        /* Sidebar styling */
+        .left-sidebar {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 150px; /* Increased width for larger buttons */
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically */
+            gap: 15px; /* Space between buttons */
+        }
+
+        .left-sidebar .btn-custom {
+            height: 70px; /* Larger height for sidebar buttons */
+            width: 100%; /* Full width of the sidebar */
+            text-align: left; /* Align text to the left */
+            padding-left: 20px; /* Space between text and left edge */
+            font-size: 1.1rem; /* Larger font size */
+        }
+    </style>
+</head>
+<body>
+
+<div class="left-sidebar">
+    <input type="radio" class="btn-check" name="sidebar-options" id="sidebar-option1" autocomplete="off" checked>
+    <label class="btn btn-custom" for="sidebar-option1">
+        <i class="fas fa-home"></i> Home
+    </label>
+
+    <input type="radio" class="btn-check" name="sidebar-options" id="sidebar-option2" autocomplete="off">
+    <label class="btn btn-custom" for="sidebar-option2">
+        <i class="fas fa-envelope"></i> Mail
+    </label>
+
+    <input type="radio" class="btn-check" name="sidebar-options" id="sidebar-option3" autocomplete="off">
+    <label class="btn btn-custom" for="sidebar-option3">
+        <i class="fas fa-user"></i> Profile
+    </label>
+</div>
+
+<div class="container my-4">
+    <div class="cyan-container">
+        <div class="menu-text">Menu</div>
+        <div class="btn-container"> <!-- Container for horizontal buttons -->
+            <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+            <label class="btn btn-custom" for="option1">
+                <i class="fas fa-home"></i> Home
+            </label>
+
+            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+            <label class="btn btn-custom" for="option2">
+                <i class="fas fa-envelope"></i> Mail
+            </label>
+
+            <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+            <label class="btn btn-custom" for="option3">
+                <i class="fas fa-user"></i> Profile
+            </label>
+
+            <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+            <label class="btn btn-custom" for="option4">
+                <i class="fas fa-cog"></i> Settings
+            </label>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</body>
+</html>
